@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>सन्ध्या र सन्तोष – विवाह निमन्त्रणा</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Mukta:wght@300;400;500&family=Noto+Serif+Devanagari:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- १. सुरुको भाग: पृष्ठभूमि तस्बिर (images/background.jpg) + नाम + जोडी चित्र (images/couple.png) -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="dear" id="dear">आदरणीय अतिथि ज्यू,</p>
+      <p class="small">हाम्री आयुष्मती सुपुत्री सुश्री सन्ध्या नेपालको श्री सन्तोष पन्तको साथमा हुन गईरहेको शुभ विवाहको पावन अवसरमा हजुरलाई हार्दिक निमन्त्रणा गर्दछौँ</p>
+      <h1 class="names">सन्ध्या <span class="amp">र</span> सन्तोष</h1>
+      <div class="couple-icon"><img src="images/couple.jpeg" alt="दुलही र दुलहा" onerror="this.remove()"></div>
+    </div>
+  </header>
+
+  <!-- २. आशीर्वाद -->
+  <section class="band">
+    <div class="blessing">
+      <h2 class="script">शुभाशीर्वाद</h2>
+      <p>"यस शुभ अवसरमा तपाईंको उपस्थिति र आशीर्वादले हाम्रो खुशीलाई
+      झनै सुन्दर बनाउनेछ। नयाँ जीवनको यो यात्रामा तपाईंहरूको शुभकामना नै हाम्रो सबैभन्दा ठूलो उपहार हो।"</p>
+      <p class="from">– नेपाल र पन्त परिवार</p>
+    </div>
+  </section>
+
+  <!-- ३. मिति (मिति script.js को माथि राख्नुहोस्) -->
+  <section class="date-section">
+    <h2 class="script">शुभ मिति सम्झनुहोस्</h2>
+    <div class="hearts" id="hearts" aria-label="विवाहको मिति (साल / महिना / गते)"></div>
+    <p class="date-full" id="dateFull"></p>
+    <p class="meet script">दुलही र दुलहालाई चिनौं</p>
+  </section>
+
+  <!-- ४. दुलही र दुलहा: images/bride.jpg र images/groom.jpg -->
+  <section class="band band-alt">
+    <div class="people">
+      <article class="person">
+        <div class="photo"><img src="images/bride.jpeg" alt="सन्ध्या नेपाल" onerror="this.remove()"></div>
+        <h3>सन्ध्या नेपाल</h3>
+        <p>दुलही</p>
+      </article>
+      <article class="person">
+        <div class="photo"><img src="images/groom.jpeg" alt="सन्तोष पन्त" onerror="this.remove()"></div>
+        <h3>सन्तोष पन्त</h3>
+        <p>दुलहा</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ५. सम्पर्क र प्रतिक्रिया (नम्बर र इमेल script.js मा राख्नुहोस्) -->
+  <section class="contact">
+    <h2 class="script">सम्पर्क</h2>
+    <div class="buttons">
+      <a class="btn" id="callBtn" href="#">फोन गर्नुहोस्</a>
+      <a class="btn" id="waBtn" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn" id="mailBtn" href="#">इमेल</a>
+      <a class="btn" id="mapBtn" href="#" target="_blank" rel="noopener">स्थान हेर्नुहोस्</a>
+    </div>
+
+    <form class="feedback" id="feedback">
+      <h3>तपाईंको प्रतिक्रिया</h3>
+      <label>तपाईंको नाम <input id="fName" required></label>
+      <label>के तपाईं आउनुहुन्छ?
+        <select id="fAttend">
+          <option>हुन्छ, म आउनेछु</option>
+          <option>माफ गर्नुहोस्, आउन सक्दिनँ</option>
+          <option>अझै निश्चित छैन</option>
+        </select>
+      </label>
+      <label>तपाईंको शुभकामना सन्देश <textarea id="fMsg" rows="4" placeholder="यहाँ आफ्नो शुभकामना लेख्नुहोस्"></textarea></label>
+      <button class="btn" type="submit">WhatsApp मा पठाउनुहोस्</button>
+    </form>
+  </section>
+
+  <footer>सन्ध्या र सन्तोष</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

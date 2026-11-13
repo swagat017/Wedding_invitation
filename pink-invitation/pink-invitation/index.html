@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sandhya &amp; Santosh – Wedding Invitation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. HERO: background image + names + couple icon -->
+  <!-- Background image: images/background.jpg   Couple icon: images/couple.png -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="dear" id="dear">Dear Guest,</p>
+      <p class="small">together with our families, we invite you to the wedding of</p>
+      <h1 class="names">Sandhya <span class="amp">&amp;</span> Santosh</h1>
+      <div class="couple-icon"><img src="images/couple.jpeg" alt="Bride and groom" onerror="this.remove()" width="450"></div>
+    </div>
+  </header>
+
+  <!-- 2. BLESSING -->
+  <section class="band">
+    <div class="blessing">
+      <h2 class="script">With Blessings</h2>
+      <p>May the love and happiness of this new beginning
+      stay with the couple forever. Your presence and blessings will make our day truly special.</p>
+      <p class="from">– The Nepal &amp; Panta families</p>
+    </div>
+  </section>
+
+  <!-- 3. DATE (set the date in script.js, at the top) -->
+  <section class="date-section">
+    <h2 class="script">Mark the Date</h2>
+    <div class="hearts" id="hearts" aria-label="Wedding date (year / month / day)"></div>
+    <p class="date-full" id="dateFull"></p>
+    <p class="meet script">Meet our Bride &amp; Groom</p>
+  </section>
+
+  <!-- 4. BRIDE & GROOM: photos images/bride.jpg and images/groom.jpg -->
+  <section class="band band-alt">
+    <div class="people">
+      <article class="person">
+        <div class="photo"><img src="images/bride.jpeg" alt="Sandhya Nepal" onerror="this.remove()"></div>
+        <h3>Sandhya Nepal</h3>
+        <p>The Bride</p>
+      </article>
+      <article class="person">
+        <div class="photo"><img src="images/groom.jpeg" alt="Santosh Panta" onerror="this.remove()"></div>
+        <h3>Santosh Panta</h3>
+        <p>The Groom</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 5. CONTACT + FEEDBACK (numbers and email are set in script.js) -->
+  <section class="contact">
+    <h2 class="script">Contact Us</h2>
+    <div class="buttons">
+      <a class="btn" id="callBtn" href="#">Call</a>
+      <a class="btn" id="waBtn" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn" id="mailBtn" href="#">Email</a>
+      <a class="btn" id="mapBtn" href="#" target="_blank" rel="noopener">View location</a>
+    </div>
+
+    <form class="feedback" id="feedback">
+      <h3>Any response?</h3>
+      <label>Your name <input id="fName" required></label>
+      <label>Will you attend?
+        <select id="fAttend">
+          <option>Yes, I will be there</option>
+          <option>Sorry, I cannot make it</option>
+          <option>Not sure yet</option>
+        </select>
+      </label>
+      <label>Your message <textarea id="fMsg" rows="4" placeholder="Write your wishes here"></textarea></label>
+      <button class="btn" type="submit">Send on WhatsApp</button>
+    </form>
+  </section>
+
+  <footer>Sandhya &amp; Santosh</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
